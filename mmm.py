@@ -3,6 +3,7 @@ from matplotlib.animation import FuncAnimation, PillowWriter
 import matplotlib.pyplot as plt
 import matplotlib.patches as mp
 import random
+from PIL import Image, ImageTk, ImageSequence
 
 def IC(D:nx.Graph(),p:float,initial):  # type: ignore
     dico_etat  = { a:"ignorant" for a in D.nodes() } # Creer un dictionnaire avec touts les etats de noeuds ignorant
